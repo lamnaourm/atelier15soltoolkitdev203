@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.content {
+  display: flex;
+  gap: 30px;
+  padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header {
+  background-color: rgb(245, 241, 236);
+  box-shadow: rgb(38, 57, 77) 0px 5px 5px -5px;
+  font-size: 30px;
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.list {
+  flex-grow: 1;
+}
+
+.list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+
+.list table td, .list table th {
+  border: 1px solid #000;
+}
+
+
+.list table th:nth-child(2) {
+  width: 30%;
+}
+.add {
+  width: 25%;
+}
+
+.addbudget, .adddepense  {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #aba7a7;
+  padding: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  font-size: 40px;
+}
+
+.stats div {
+  background-color: beige;
+  padding: 20px;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
